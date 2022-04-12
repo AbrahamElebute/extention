@@ -1,0 +1,27 @@
+@import "colors";
+header{
+    background: $dark;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    padding-bottom:5px;
+    box-shadow: 0px 2px 3px $primary;
+    .logo{
+        img{
+            width: 200px;
+        }
+    }
+    .rest{
+        border: none;
+        background-color: transparent;
+        cursor: pointer;
+        i{
+            background-image:$primaryLinearGradient;
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+           font-size: 30px;
+        }
+    }
+}

@@ -1,0 +1,84 @@
+@import "colors";
+.links-section{
+    margin-top: 50px;
+    #ul-el{
+        .link{
+            padding-left: 18px;
+            padding-right: 18px;
+            padding-top: 8px;
+            padding-bottom: 8px;
+            max-width: 464px;
+           
+            .date{
+                text-transform: capitalize;
+            }
+           div{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            a{
+            font-size: 25px;
+            color: $primary;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            overflow: hidden;
+            width: 400px;
+            transition: 1s;
+            &:hover{
+              color: $dark;
+            }
+            }
+            button{
+            cursor: pointer;
+            background: none;
+            border: none;
+            outline: none;
+                img{
+                    width: 35px;
+                    pointer-events: none; 
+                }
+                &:hover{
+                  animation: jello-horizontal 0.9s both;
+                  @keyframes jello-horizontal {
+                    0% {
+                      -webkit-transform: scale3d(1, 1, 1);
+                      transform: scale3d(1, 1, 1);
+                    }
+                    30% {
+                      -webkit-transform: scale3d(1.25, 0.75, 1);
+                      transform: scale3d(1.25, 0.75, 1);
+                    }
+                    40% {
+                      -webkit-transform: scale3d(0.75, 1.25, 1);
+                      transform: scale3d(0.75, 1.25, 1);
+                    }
+                    50% {
+                      -webkit-transform: scale3d(1.15, 0.85, 1);
+                      transform: scale3d(1.15, 0.85, 1);
+                    }
+                    65% {
+                      -webkit-transform: scale3d(0.95, 1.05, 1);
+                      transform: scale3d(0.95, 1.05, 1);
+                    }
+                    75% {
+                      -webkit-transform: scale3d(1.05, 0.95, 1);
+                      transform: scale3d(1.05, 0.95, 1);
+                    }
+                    100% {
+                      -webkit-transform: scale3d(1, 1, 1);
+                      transform: scale3d(1, 1, 1);
+                    }
+              }
+                }
+            }
+         
+           }
+           &:hover{
+            background-color: rgba(128, 128, 128, 0.3);
+            transform: scale(1.011);
+
+        }
+         
+        }
+    }
+}

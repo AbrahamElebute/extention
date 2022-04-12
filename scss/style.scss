@@ -1,0 +1,43 @@
+@import "header";
+@import "colors";
+@import "input";
+@import "main";
+ 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  html {
+    height: 600px;
+    scroll-behavior: smooth;
+  }
+body{
+    min-width: 500px;
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.com/svgjs' width='500' height='600' preserveAspectRatio='none' viewBox='0 0 500 600'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1017%26quot%3b)' fill='none'%3e%3cpath d='M199.92 706.13C268.13 631.02 222.25 327.48 332.51 322.58 442.77 317.68 516.41 504.86 597.68 514.58' stroke='rgba(10%2c 59%2c 166%2c 0.25)' stroke-width='2'%3e%3c/path%3e%3cpath d='M123.64 638.3C229.54 563.1 214.58 188.12 354.33 172.79 494.08 157.46 517.28 311.04 585.02 316.79' stroke='rgba(10%2c 59%2c 166%2c 0.25)' stroke-width='2'%3e%3c/path%3e%3cpath d='M233.32 712.48C270.98 711.81 269.9 698.28 375.84 663.58 481.77 628.88 452.4 417.78 518.35 369.58' stroke='rgba(10%2c 59%2c 166%2c 0.25)' stroke-width='2'%3e%3c/path%3e%3cpath d='M288.37 670.91C331.53 664.23 312.79 613.32 423.83 560.61 534.88 507.9 495.04 312.02 559.3 260.61' stroke='rgba(10%2c 59%2c 166%2c 0.25)' stroke-width='2'%3e%3c/path%3e%3cpath d='M51.23 678.77C130.66 665.24 138.34 495.94 296.5 469.68 454.66 443.42 463.04 278.42 541.77 265.68' stroke='rgba(10%2c 59%2c 166%2c 0.25)' stroke-width='2'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1017'%3e%3crect width='500' height='600' fill='white'%3e%3c/rect%3e%3c/mask%3e%3c/defs%3e%3c/svg%3e");
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+footer{
+  background-color: rgba(128, 128, 128, 0.3);
+  width: 100%;
+  height: 3em;
+display: flex;
+justify-content:space-around;
+align-items: center;
+a{
+  text-decoration: none;
+  color: $dark;
+  cursor: pointer;
+  padding: 10px;
+  text-transform: uppercase;
+  text-shadow: 0px 3px 4px black;
+  background-color: rgba(0, 0, 0, 0.3);
+  transition: 1s;
+  &:hover{
+    transform: translateY(-10px);
+  }
+}
+
+}
